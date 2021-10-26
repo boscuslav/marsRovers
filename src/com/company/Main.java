@@ -13,6 +13,11 @@ public class Main {
         grid.addRover(rover);
         rover.executeSequence("LMLMLMLMM");
 
+        Rover rover2 = new Rover(3, 3, DirectionsEnum.valueOf("E"));
+        grid.addRover(rover2);
+        rover2.executeSequence("MMRMMRMRRM");
+
         System.out.println(rover.toString());
+        System.out.println(rover2.toString());
     }
 }

@@ -42,6 +42,10 @@ public class Rover {
         }
     }
 
+    public Position getPosition() {
+        return position;
+    }
+
     public String toString() {
         return position.toString() + " " + heading.getDirection().toString();
     }
